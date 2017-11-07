@@ -37,7 +37,8 @@ public class MainApp extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 	}
 
@@ -54,7 +55,9 @@ public class MainApp extends Application {
 			// Set login into the center of root layout.
 			rootLayout.setCenter(login);
 		} catch (IOException e) {
-			e.printStackTrace();
+
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 	}
 

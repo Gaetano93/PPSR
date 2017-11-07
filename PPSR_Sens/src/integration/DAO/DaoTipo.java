@@ -43,7 +43,8 @@ public class DaoTipo implements DAO<Tipo> {
 			result = query.executeQuery();
 			ret = creaLista(result);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -77,7 +78,9 @@ public class DaoTipo implements DAO<Tipo> {
 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return lista;

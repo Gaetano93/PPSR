@@ -40,7 +40,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -59,7 +60,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("Connessione Fallita!");
 		}
 
 		return ret;
@@ -77,7 +79,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = creaLista(result);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -96,7 +99,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = creaLista(result);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -118,7 +122,8 @@ public class DaoImpianto implements DAO<Impianto> {
 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return lista;
@@ -205,7 +210,8 @@ public class DaoImpianto implements DAO<Impianto> {
 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return lista;
@@ -223,7 +229,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = creaListaC(result);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -240,7 +247,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = creaListaC(result);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -259,7 +267,8 @@ public class DaoImpianto implements DAO<Impianto> {
 			ret = creaListaC(result);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;

@@ -121,7 +121,8 @@ public class NuovoModelloController {
 			content.getChildren().clear();
 			content.getChildren().add(newLoadedPane);
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Fallito caricamento schermata!");
+			//e.printStackTrace();
 		}
 	}
 

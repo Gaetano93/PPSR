@@ -40,7 +40,8 @@ public class DaoModelloSensore implements DAO<ModelloSensore> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -60,7 +61,8 @@ public class DaoModelloSensore implements DAO<ModelloSensore> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -76,7 +78,8 @@ public class DaoModelloSensore implements DAO<ModelloSensore> {
 			ret = creaLista(query.executeQuery());
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -93,7 +96,8 @@ public class DaoModelloSensore implements DAO<ModelloSensore> {
 			ret = creaLista(query.executeQuery());
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -123,7 +127,8 @@ public class DaoModelloSensore implements DAO<ModelloSensore> {
 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return lista;

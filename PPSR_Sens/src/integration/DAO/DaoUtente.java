@@ -48,7 +48,8 @@ public class DaoUtente implements DAO<Utente> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -74,7 +75,9 @@ public class DaoUtente implements DAO<Utente> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -92,7 +95,8 @@ public class DaoUtente implements DAO<Utente> {
 			ret = true;
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -108,7 +112,8 @@ public class DaoUtente implements DAO<Utente> {
 			result = query.executeQuery();
 			ret = creaLista(result);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -123,7 +128,8 @@ public class DaoUtente implements DAO<Utente> {
 			result = query.executeQuery();
 			ret = creaLista(result);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -139,7 +145,9 @@ public class DaoUtente implements DAO<Utente> {
 			result = query.executeQuery();
 			ret = creaLista(result);
 		} catch (SQLException e) {
-			e.printStackTrace();
+
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;
@@ -171,7 +179,8 @@ public class DaoUtente implements DAO<Utente> {
 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return lista;
@@ -187,7 +196,8 @@ public class DaoUtente implements DAO<Utente> {
 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return lista;
@@ -205,7 +215,8 @@ public class DaoUtente implements DAO<Utente> {
 			ret = creaListaCodici(result);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Connessione Fallita!");
+			//e.printStackTrace();
 		}
 
 		return ret;

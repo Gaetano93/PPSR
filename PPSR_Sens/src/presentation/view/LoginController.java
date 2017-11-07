@@ -81,7 +81,8 @@ public class LoginController {
 					// Hide this current window (if this is what you want)
 					((Node) (event.getSource())).getScene().getWindow().hide();
 				} catch (IOException e) {
-					e.printStackTrace();
+					System.out.println("Fallito caricamento schermata!");
+					//e.printStackTrace();
 				}
 			} else if (permission.equalsIgnoreCase("1")) {
 				try {
@@ -96,7 +97,8 @@ public class LoginController {
 					// Hide this current window (if this is what you want)
 					((Node) (event.getSource())).getScene().getWindow().hide();
 				} catch (IOException e) {
-					e.printStackTrace();
+					System.out.println("Fallito caricamento schermata!");
+					//e.printStackTrace();
 				}
 			} else {
 				try {
@@ -111,7 +113,8 @@ public class LoginController {
 					// Hide this current window (if this is what you want)
 					((Node) (event.getSource())).getScene().getWindow().hide();
 				} catch (IOException e) {
-					e.printStackTrace();
+					System.out.println("Fallito caricamento schermata!");
+					//e.printStackTrace();
 				}
 			}
 
