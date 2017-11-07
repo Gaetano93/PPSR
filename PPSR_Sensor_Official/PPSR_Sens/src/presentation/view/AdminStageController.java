@@ -6,17 +6,34 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class AdminStageController {
 
-	public static final String NUOVO_CLIENTE = "presentation/view/NuovoCliente.fxml";
-	public static final String ELIMINA_CLIENTE = "presentation/view/EliminaCliente.fxml";
-	public static final String LISTA_SENSORI = "presentation/view/ListaSensori.fxml";
-	public static final String LISTA_IMPIANTI = "presentation/view/ListaImpianti.fxml";
-	public static final String NUOVO_IMPIANTO = "presentation/view/NuovoImpianto.fxml";
-	public static final String LISTA_CLIENTI = "presentation/view/ListaClienti.fxml";
-	public static final String MODIFICA_IMPIANTO = "presentation/view/ListaSensoriModifica.fxml";
-	public static final String AGGIORNA_DB = "presentation/view/ListaModelli.fxml";
+	public static final String NUOVO_CLIENTE;
+	public static final String ELIMINA_CLIENTE;
+	public static final String LISTA_SENSORI;
+	public static final String LISTA_IMPIANTI;
+	public static final String NUOVO_IMPIANTO;
+	public static final String LISTA_CLIENTI;
+	public static final String MODIFICA_IMPIANTO;
+	public static final String AGGIORNA_DB;
+
+	static {
+		NUOVO_CLIENTE = "presentation/view/NuovoCliente.fxml";
+		ELIMINA_CLIENTE = "presentation/view/EliminaCliente.fxml";
+		LISTA_SENSORI = "presentation/view/ListaSensori.fxml";
+		LISTA_IMPIANTI = "presentation/view/ListaImpianti.fxml";
+		NUOVO_IMPIANTO = "presentation/view/NuovoImpianto.fxml";
+		LISTA_CLIENTI = "presentation/view/ListaClienti.fxml";
+		MODIFICA_IMPIANTO = "presentation/view/ListaSensoriModifica.fxml";
+		AGGIORNA_DB = "presentation/view/ListaModelli.fxml";
+
+	}
 
 	public static int funzione = 0; // 1 se mostra sensori, 2 se crea impianto,
 									// 3 se elimina impianto, 4 modifica

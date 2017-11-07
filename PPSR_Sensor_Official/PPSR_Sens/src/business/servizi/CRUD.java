@@ -3,6 +3,11 @@ package business.servizi;
 import java.util.List;
 
 import business.entita.Entita;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public interface CRUD<T> extends Entita {
 

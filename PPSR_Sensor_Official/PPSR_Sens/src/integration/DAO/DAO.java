@@ -1,6 +1,11 @@
 package integration.DAO;
 
 import java.util.List;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public interface DAO<Entita> {
 

@@ -1,5 +1,10 @@
 package business.entita;
 
+/**
+ * 
+ * @author PPSR
+ *
+ */
 public class Impianto implements Entita {
 
 	public Impianto(String nome, String cliente) {

@@ -14,6 +14,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class DipendenteStageController {
 	@FXML
@@ -22,8 +27,8 @@ public class DipendenteStageController {
 	private final ServizioUtenti servizio = new ServizioUtenti();
 	public static Utente utenteSelezionato;
 
-	public static final String NUOVO_DIPENDENTE = "presentation/view/NuovoDipendente.fxml";
-	public static final String LISTA_DIPENDENTE = "presentation/view/ListaDipendenti.fxml";
+	public static final String NUOVO_DIPENDENTE;
+	public static final String LISTA_DIPENDENTE;
 
 	public static int funzione = 0; // 8 se elimina impianto, 9 modifica
 									// impianto
@@ -40,6 +45,12 @@ public class DipendenteStageController {
 	private Button listaDipendentiButt;
 
 	AnchorPane newLoadedPane;
+
+	static {
+		NUOVO_DIPENDENTE = "presentation/view/NuovoDipendente.fxml";
+		LISTA_DIPENDENTE = "presentation/view/ListaDipendenti.fxml";
+		utenteSelezionato = null;
+	}
 
 	@FXML
 	public void initialize() {

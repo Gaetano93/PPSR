@@ -5,6 +5,11 @@ import java.util.List;
 import business.entita.Impianto;
 import integration.DAO.DaoImpianto;
 import integration.DAO.DaoImpianto.coppia;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ServizioImpianti implements CRUD<Impianto> {
 	private DaoImpianto daoImpianto = new DaoImpianto();

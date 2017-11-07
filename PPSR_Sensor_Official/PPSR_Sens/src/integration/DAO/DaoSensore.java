@@ -12,6 +12,11 @@ import java.util.Random;
 
 import business.entita.Sensore;
 import integration.DBConnector;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class DaoSensore implements DAO<Sensore> {
 

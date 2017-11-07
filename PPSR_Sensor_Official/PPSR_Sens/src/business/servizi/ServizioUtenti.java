@@ -5,6 +5,11 @@ import java.util.List;
 
 import business.entita.Utente;
 import integration.DAO.DaoUtente;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ServizioUtenti implements CRUD<Utente> {
 	private DaoUtente daoUtente = new DaoUtente();

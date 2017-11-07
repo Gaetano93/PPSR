@@ -1,5 +1,10 @@
 package business.entita;
 
+/**
+ * 
+ * @author PPSR
+ *
+ */
 public class Sensore implements Entita {
 
 	public Sensore(String iD, String modello, String impianto, String rilevazione, String tipo) {

@@ -13,6 +13,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class CodiceClienteController {
 
@@ -30,6 +35,14 @@ public class CodiceClienteController {
 
 	public static int funzione;
 	public static String codiceAdmin;
+
+	private static final String LISTA_IMPIANTI_CODICE;
+
+	static {
+		LISTA_IMPIANTI_CODICE = "presentation/view/ListaImpiantiCodice.fxml";
+		funzione = 0;
+		codiceAdmin = "";
+	}
 
 	@FXML
 	private void initialize() {
@@ -64,7 +77,7 @@ public class CodiceClienteController {
 				aContent = "Codice inserito correttamente";
 				alert = new Alert(AlertType.INFORMATION);
 				funzione = 10;
-				goScene("presentation/view/ListaImpiantiCodice.fxml");
+				goScene(LISTA_IMPIANTI_CODICE);
 				nomeField.clear();
 			} else {
 				aContent = "Codice Errato";

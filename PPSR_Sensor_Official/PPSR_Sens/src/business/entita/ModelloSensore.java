@@ -1,5 +1,11 @@
 package business.entita;
 
+
+/**
+ * 
+ * @author PPSR
+ *
+ */
 public class ModelloSensore implements Entita {
 
 	public ModelloSensore(String codice, String tipo, String marca) {

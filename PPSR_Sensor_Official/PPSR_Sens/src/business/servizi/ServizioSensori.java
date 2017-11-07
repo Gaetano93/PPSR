@@ -5,6 +5,11 @@ import java.util.List;
 import business.entita.Sensore;
 //import business.entita.Utente;
 import integration.DAO.DaoSensore;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ServizioSensori implements CRUD<Sensore> {
 

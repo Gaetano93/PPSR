@@ -15,6 +15,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ListaImpiantiCodiceController {
 
@@ -23,6 +28,13 @@ public class ListaImpiantiCodiceController {
 	private ObservableList<coppia> tableImpiantiData = FXCollections.observableArrayList();
 
 	public static coppia impiantoSelezionato;
+
+	public static final String LISTA_SENSORI_CODICE;
+
+	static {
+		impiantoSelezionato = null;
+		LISTA_SENSORI_CODICE = "presentation/view/ListaSensoriCodice.fxml";
+	}
 
 	@FXML
 	private AnchorPane content;
@@ -62,7 +74,7 @@ public class ListaImpiantiCodiceController {
 						coppia rowData = row.getItem();
 						impiantoSelezionato = rowData;
 						System.out.println(rowData.getI().getNome());
-						goScene("presentation/view/ListaSensoriCodice.fxml");
+						goScene(LISTA_SENSORI_CODICE);
 					}
 				});
 

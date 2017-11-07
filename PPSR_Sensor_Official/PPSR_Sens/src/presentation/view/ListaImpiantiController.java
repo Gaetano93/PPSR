@@ -21,6 +21,11 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ListaImpiantiController {
 
@@ -29,6 +34,10 @@ public class ListaImpiantiController {
 	private ObservableList<coppia> tableImpiantiData = FXCollections.observableArrayList();
 
 	public static coppia impiantoSelezionato;
+
+	static {
+		impiantoSelezionato = null;
+	}
 
 	@FXML
 	private AnchorPane content;

@@ -4,6 +4,11 @@ import java.util.List;
 
 import business.entita.Tipo;
 import integration.DAO.DaoTipo;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ServizioTipi implements CRUD<Tipo> {
 	private DaoTipo daoTipo = new DaoTipo();

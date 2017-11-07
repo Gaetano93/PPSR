@@ -1,5 +1,10 @@
 package business.entita;
 
+/**
+ * 
+ * @author PPSR
+ *
+ */
 public class Tipo {
 	public Tipo(String tipo) {
 		this.tipo = tipo;

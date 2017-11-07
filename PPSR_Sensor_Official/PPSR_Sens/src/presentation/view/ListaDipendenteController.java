@@ -20,6 +20,11 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ListaDipendenteController {
 
@@ -37,6 +42,10 @@ public class ListaDipendenteController {
 	private ObservableList<Utente> tableUtentiData = FXCollections.observableArrayList();
 
 	public static Utente utenteSelezionato;
+
+	static {
+		utenteSelezionato = null;
+	}
 
 	@SuppressWarnings("unchecked")
 	@FXML

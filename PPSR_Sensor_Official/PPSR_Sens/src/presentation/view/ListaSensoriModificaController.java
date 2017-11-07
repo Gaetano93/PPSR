@@ -26,6 +26,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class ListaSensoriModificaController {
 

@@ -1,5 +1,11 @@
 package business.entita;
 
+/**
+ * 
+ * @author PPSR
+ *
+ */
+
 public class Utente implements Entita {
 
 	private String ID;

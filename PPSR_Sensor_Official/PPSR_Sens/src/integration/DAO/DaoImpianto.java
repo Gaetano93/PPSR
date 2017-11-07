@@ -193,7 +193,8 @@ public class DaoImpianto implements DAO<Impianto> {
 				String cognomeC = res.getString("cognome_cliente");
 
 				Impianto impianto = new Impianto(ID, nome, cliente);
-				Utente utente = new Utente(cliente, nomeC, cognomeC, "", "", "0");// 0
+				//se da problemi futuri controllare virgolette finali 
+				Utente utente = new Utente(cliente, nomeC, cognomeC, "", "", "0", "");// 0
 																					// imposta
 																					// l'untente
 																					// come

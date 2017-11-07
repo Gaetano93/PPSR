@@ -9,6 +9,11 @@ import java.util.List;
 
 import business.entita.Tipo;
 import integration.DBConnector;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class DaoTipo implements DAO<Tipo> {
 

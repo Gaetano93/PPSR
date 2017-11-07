@@ -9,6 +9,11 @@ import java.util.List;
 
 import business.entita.ModelloSensore;
 import integration.DBConnector;
+/**
+ * 
+ * @author PPSR
+ *
+ */
 
 public class DaoModelloSensore implements DAO<ModelloSensore> {
 
