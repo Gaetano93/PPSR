@@ -5,7 +5,7 @@ import business.entita.Utente;
 /**
  * Classe (pattern: singleton) per login e sessione dell'utente
  * 
- * @author Andrea
+ * @author PPSR
  *
  */
 

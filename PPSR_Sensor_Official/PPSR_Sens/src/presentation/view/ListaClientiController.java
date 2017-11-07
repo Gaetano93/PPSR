@@ -20,6 +20,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+
 /**
  * 
  * @author PPSR
@@ -82,19 +83,6 @@ public class ListaClientiController {
 
 				return row;
 			});
-
-		/*
-		 * else if (AdminStageController.funzione == 4) {
-		 * tableClienti.setRowFactory(tv -> { TableRow<Utente> row = new
-		 * TableRow<>(); row.setOnMouseClicked(event -> { if (!row.isEmpty()) {
-		 * Utente rowData = row.getItem(); utenteSelezionato = rowData;
-		 * System.out.println(rowData.getNome());
-		 * goScene(AdminStageController.LISTA_IMPIANTI);
-		 * 
-		 * } });
-		 * 
-		 * return row; }); }
-		 */
 
 		// elimina cliente
 		else if (AdminStageController.funzione == 5) {

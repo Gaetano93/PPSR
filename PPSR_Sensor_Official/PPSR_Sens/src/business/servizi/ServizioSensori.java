@@ -13,14 +13,24 @@ import integration.DAO.DaoSensore;
 
 public class ServizioSensori implements CRUD<Sensore> {
 
-	final static String ERRORE = "ERR";
-	final static String ANOMALIA = "ANM";
-	final static String SUCCESSO = "SUC";
+	final static String ERRORE;
+	final static String ANOMALIA;
+	final static String SUCCESSO;
 
-	final static String TEMPERATURA = "T";
-	final static String UMIDITA = "U";
-	final static String PRESSIONE = "P";
+	final static String TEMPERATURA;
+	final static String UMIDITA;
+	final static String PRESSIONE;
+	
+	static{
+		ERRORE = "ERR";
+		ANOMALIA = "ANM";
+		SUCCESSO = "SUC";
 
+		TEMPERATURA = "T";
+		UMIDITA = "U";
+		PRESSIONE = "P";
+		
+	}
 	private DaoSensore daoSensore = new DaoSensore();
 
 	@Override

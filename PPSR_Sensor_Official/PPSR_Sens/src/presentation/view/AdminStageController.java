@@ -64,6 +64,7 @@ public class AdminStageController {
 	@FXML
 	public void initialize() {
 
+		
 		homeButton.setOnAction((event) -> {
 			funzione = 1;
 			goScene(LISTA_IMPIANTI);

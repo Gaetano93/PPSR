@@ -25,7 +25,7 @@ import javafx.scene.layout.AnchorPane;
 
 public class ListaModelliController {
 
-	private final ServizioModelli servizioM = new ServizioModelli();
+	//private final ServizioModelli servizioM = new ServizioModelli();
 
 	private ObservableList<ModelloSensore> tableModelliData = FXCollections.observableArrayList();
 
@@ -45,7 +45,7 @@ public class ListaModelliController {
 	@SuppressWarnings("unchecked")
 	@FXML
 	private void initialize() {
-
+		final ServizioModelli servizioM = new ServizioModelli();
 		nuovoModelloButton.setOnAction((event) -> {
 			goScene("presentation/view/NuovoModello.fxml");
 		});

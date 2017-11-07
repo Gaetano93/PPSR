@@ -35,7 +35,7 @@ import javafx.scene.layout.AnchorPane;
 public class ListaSensoriModificaController {
 
 	private final ServizioSensori servizioS = new ServizioSensori();
-	private final ServizioTipi servizioT = new ServizioTipi();
+	//private final ServizioTipi servizioT = new ServizioTipi();
 
 	private ObservableList<Sensore> tableSensoriData = FXCollections.observableArrayList();
 	private ObservableList<Tipo> tableTipiData = FXCollections.observableArrayList();
@@ -59,7 +59,7 @@ public class ListaSensoriModificaController {
 	@SuppressWarnings("unchecked")
 	@FXML
 	private void initialize() {
-
+		
 		// INSERISCI SENSORE
 		nuovoButton.setOnAction((event) -> {
 			goScene("presentation/view/NuovoSensore.fxml");
@@ -120,7 +120,10 @@ public class ListaSensoriModificaController {
 
 			return row;
 		});
-
+		//se non funziona cancellare e sbloccare codice sopra
+		ServizioTipi servizioT = new ServizioTipi();
+		
+		
 		TableColumn<Sensore, String> modelloCol = new TableColumn<Sensore, String>("Modello");
 		modelloCol.setMinWidth(30);
 		modelloCol.setCellValueFactory(new PropertyValueFactory<>("modello"));
